@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- 
+  Name: Kody Chang
+  Course: WEB 110 – Exam 4 Resume Project
+  Description: Personal resume webpage for GitHub Pages
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta name="description" content="Personal resume webpage for Your Name - Web Developer, Designer, Creator." />
+    <meta name="author" content="Your Name" />
+    <meta name="keywords" content="web developer, resume, portfolio, HTML, CSS" />
+
+    <title>Kody Chang | Resume</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Kody Chang</h1>
+        <p class="tagline">Future Web Developer</p>
+
+        <nav aria-label="Main navigation">
+            <ul class="nav-menu">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="imgs/" alt="Portrait photo of Kody Chang" class="profile-img">
+            <p>
+                Hello! My name is Kody Chang. I am a upcoming web developer, looking to expand my skills in HTML, CSS,
+                C# and many more. I like to work on old projects and revamp them with new skills I have learned. I am
+                currently a full-time at Ozark Techincal Community College, or OTCC for short. I also work full-time at
+                a local car wash. Thank you for visiting my resume webpage!
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5 & Semantic Structure</li>
+                <li>CSS3 & Responsive Design</li>
+                <li>JavaScript (Basic)</li>
+                <li>Version Control (Git / GitHub)</li>
+                <li>Scripting Programming (Basic)</li>
+                <li>C# Programming (Basic)</li>
+            </ul>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project-card">
+                <h3>Pawfect Petcare</h3>
+                <p>This was one of a project that I made for class. It's an advertisement for a pet care service.</p>
+                <a href="pawfectprjt/purrfolder/" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Bait Shop</h3>
+                <p>A multi-page fishing gear website with navigation and styling. It consist of a location, web player,
+                    and a selection of baits.</p>
+                <a href="live-bait-website/baitshop/" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Fitness Website</h3>
+                <p>A website focused on fitness and health. It has a schedule of different excercises classes with
+                    instructors and a work in progress (WIP) contact page. </p>
+                <a href="fitforfitness/fit-for-fitness/" class="project-link">View Project</a>
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <p>If you'd like to get in touch, please fill out the form below:</p>
+
+            <form aria-label="Contact form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Kody Chang</p>
+    </footer>
+
+    <script>
+        // Auto-year footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
